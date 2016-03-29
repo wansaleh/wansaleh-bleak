@@ -165,7 +165,7 @@ module.exports = function(grunt) {
       prod: {
         options: {
           src: ".",
-          dest: "/var/www/ghost/content/themes/bleak",
+          dest: "/var/www/ghost/content/themes/wansaleh-bleak",
           host: "root@188.166.249.13",
           deleteAll: true // Careful this option could cause data loss, read the docs!
         }
