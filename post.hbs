@@ -52,9 +52,6 @@
         </section>
 
         <footer class="post-footer">
-          <!-- <div class="post-tags">
-            {{tags separator=" "}}
-          </div> -->
           <div class="post-share">
             <a class="icon-twitter" href="https://twitter.com/share?text={{title}}&url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
               <span>Twitter</span>
@@ -67,41 +64,41 @@
             </a>
           </div>
         </footer>
-
-        <aside class="post-comments">
-          <div id="disqus_thread"></div>
-        </aside>
-
       </div>
-
-      <nav class="post-nav">
-      {{#next_post}}
-        <a class="post-nav-item post-nav-next" href="{{url absolute="true"}}">
-          <section class="post-nav-teaser">
-            <span class="post-nav-icon"><i class="icon-arrow-left"></i></span>
-            <span class="post-nav-info">
-              <h4 class="post-nav-title">{{title}}</h4>
-              <p class="post-nav-excerpt">{{excerpt words="12"}}&hellip;</p>
-            </span>
-          </section>
-        </a>
-      {{/next_post}}
-      {{#prev_post}}
-        <a class="post-nav-item post-nav-prev" href="{{url absolute="true"}}">
-          <section class="post-nav-teaser">
-            <span class="post-nav-icon"><i class="icon-arrow-right"></i></span>
-            <span class="post-nav-info">
-              <h4 class="post-nav-title">{{title}}</h4>
-              <p class="post-nav-excerpt">{{excerpt words="12"}}&hellip;</p>
-            </span>
-          </section>
-        </a>
-      {{/prev_post}}
-        <div class="clear"></div>
-      </nav>
 
     </div>
   </article>
+
+  <aside class="post-comments">
+    <div id="disqus_thread"></div>
+  </aside>
+
+  <nav class="post-nav">
+  {{#next_post}}
+    <a class="post-nav-item post-nav-next" href="{{url absolute="true"}}">
+      <section class="post-nav-teaser">
+        <span class="post-nav-icon"><i class="icon-arrow-left"></i></span>
+        <span class="post-nav-info">
+          <h4 class="post-nav-title">{{title}}</h4>
+          <p class="post-nav-excerpt">{{excerpt words="12"}}&hellip;</p>
+        </span>
+      </section>
+    </a>
+  {{/next_post}}
+  {{#prev_post}}
+    <a class="post-nav-item post-nav-prev" href="{{url absolute="true"}}">
+      <section class="post-nav-teaser">
+        <span class="post-nav-icon"><i class="icon-arrow-right"></i></span>
+        <span class="post-nav-info">
+          <h4 class="post-nav-title">{{title}}</h4>
+          <p class="post-nav-excerpt">{{excerpt words="12"}}&hellip;</p>
+        </span>
+      </section>
+    </a>
+  {{/prev_post}}
+    <div class="clear"></div>
+  </nav>
+
 </main>
 
 {{/post}}

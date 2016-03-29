@@ -3,8 +3,9 @@
    ========================================================================== */
 
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,300italic,300,400italic,700|Merriweather+Sans:400,400italic,800,800italic|Inconsolata:400,700);
+
 // @import "fonts";
-// @import "../../bower_components/bootstrap/scss/bootstrap";
+// @import "../../bower_components/bootstrap/scss/bootstrap-grid.scss";
 @import "mdc";
 @import "icons";
 
@@ -1153,6 +1154,10 @@ body {
    Post
    ========================================================================== */
 
+.content {
+  position: relative;
+}
+
 .post {
   position: relative;
   z-index: 20;
@@ -1677,6 +1682,7 @@ body {
 
 .post-nav {
   position: relative;
+  z-index: 40;
 
   @media only screen and (max-width: $breakpoint-desktop) {
     height: 5em;

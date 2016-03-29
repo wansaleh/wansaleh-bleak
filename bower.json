@@ -11,6 +11,7 @@
     "nprogress": "~0.2.0",
     "reading-time": "~1.0.0",
     "bootstrap": "~4.0",
-    "skrollr": "^0.6.30"
+    "skrollr": "^0.6.30",
+    "jquery-readingtime": "^0.1.1"
   }
 }
